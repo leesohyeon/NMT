@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .flexbox{
+            display:flex;
+            display:-webkit-flex;    
+            display:-ms-flexbox;    
+            height:200px;
+            background:lightgray;
+        }
+        .flexbox > div{
+            flex:1;
+            -webkit-flex:1;
+            -ms-flex:1;
+            background:darkcyan;
+            margin:10px;
+            font:30px arial-black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        display : flex;
+        display:-webkit-flex;
+        display:-ms-flexbox;
+        
+        -webkit- : 구글, 사파리
+        -mx- : 익스플로러
+        -o- : 오페라
+        -moz- : 파이어폭스 브라우저
+    -->
+    
+    <!--
+       flex:1;    (=flex:1 1 0;)
+        flex
+        -flex-grow 공간이 남을 때 항목 크기를 늘려  채워주는 방법 정의
+        -flex-shrink  공간이 부족할 때 항목 크기를 줄여 채워주는 방법 정의
+        -flex-basis 자식 요소들 초기 가로 길이 지정 속성
+    -->
+    
+    <!--
+        +) https://d2.naver.com/helloworld/8540176
+        창 크기를 줄였다가 늘렸다가 하면 그 창에 맞게 비율이 유지됨=>flex:1
+    -->
+    
+    <div class="flexbox">
+        <div>flex1</div>
+        <div>flex2</div>
+        <div>flex3</div>
+<!--
+        <div>flex4</div>
+        <div>flex5</div>
+        <div>flex6</div>
+        <div>flex7</div>
+        <div>flex8</div>
+        <div>flex9</div>
+        <div>flex10</div>
+-->
+    </div>
+</body>
+</html>

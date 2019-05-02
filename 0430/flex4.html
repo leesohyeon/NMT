@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .flexbox{
+            display:flex;
+            display:-webkit-flex;    
+            display:-ms-flexbox;
+/*
+            justify-content: space-between;                //양쪽정렬(좌우만 적용)
+            -webkit-justify-content:space-between;
+*/
+             justify-content: space-around;                 //상하좌우 모두 적용
+            -webkit-justify-content:space-around;
+            height:200px;
+            background:lightgray;
+        }
+        .flexbox > div{
+            flex:0 0 100;                   
+            -webkit-flex:0 0 100;
+            -ms-flex:0 0 100;
+            background:darkcyan;
+            margin:10px;
+            font:30px arial-black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flexbox">
+        <div>flex1</div>
+        <div>flex2</div>
+        <div>flex3</div>
+    </div>
+</body>
+</html>

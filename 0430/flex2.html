@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .flexbox{
+            display:flex;
+            display:-webkit-flex;    
+            display:-ms-flexbox;    
+            height:200px;
+            background:lightgray;
+        }
+        .flexbox > div{
+            flex:0 0 100;                    //1 주면 자동으로 비율 유지
+            -webkit-flex:0 0 100;
+            -ms-flex:0 0 100;            //크기 고정됨
+            background:darkcyan;
+            margin:10px;
+            font:30px arial-black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flexbox">
+        <div>flex1</div>
+        <div>flex2</div>
+        <div>flex3</div>
+        <div>flex4</div>
+        <div>flex5</div>
+        <div>flex6</div>
+        <div>flex7</div>
+        <div>flex8</div>
+        <div>flex9</div>
+        <div>flex10</div>
+    </div>
+</body>
+</html>
