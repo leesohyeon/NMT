@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin:5px;
+        }
+    </style>
+    <script src="jquery-3-4-1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("div:first-child").css("border-style","hideen");
+            $("p:nth-child(odd)").css("border","dashed thick red");
+            $("p:nth-child(3n+1)").css("border","solid thick green");
+            $("div:only-child").css({'background-color':'purple','color':'white'});
+            $("span").css("border","solid 1px lightgray");
+            $("div").css("border","solid 1px gray");
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <div>제이쿼리 선택자</div>
+    </div>
+
+    <div>
+        div0
+        <div>
+            div1
+            <span>span1</span>
+            <span>span2</span>
+            <span>span3</span>
+            <span>span4</span>
+        </div>
+        <div>
+            div2
+            <p>p1</p>
+            <p>p2 class1 class2</p>
+            <p>p3 class1</p>
+            <p>p4</p>
+        </div>
+        <div>
+            div3 class2
+        </div>
+        <p>p</p>
+        <div></div>
+    </div>
+</body>
+</html>
