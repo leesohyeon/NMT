@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-3-4-1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#div1").before("<p>삽입1_3</p>");
+            $("#div1").prepend("<p>삽입1_1</p>");
+
+            $("#div1").append("<p>삽입1_2</p>");
+            $("#div1").after("<p>삽입1_4</p>");
+
+            $("#div2").before("<p>삽입2_3</p>");
+            $("#div2").prepend("<p>삽입2_1</p>");
+
+            $("#div2").append("<p>삽입2_2</p>");
+            $("#div2").after("<p>삽입2_4</p>");
+        });
+    </script>
+</head>
+<body>
+    <!--
+prepend()-첫번째 자식 요소
+append()-마지막 자식요소
+before()-이전에 삽입
+after()-다음에 삽입
+
+prependTo()
+appendTo()
+insertBefore()
+insertAfter()
+    -->
+
+    <div id="div1"><strong>내용1</strong></div>
+    <div id="div2"><strong>내용2</strong></div>
+</body>
+</html>

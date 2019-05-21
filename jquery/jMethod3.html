@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery-3-4-1.min.js"></script>
+    <script >
+    $(document).ready(function(){
+$("div:nth-child(1)").width("100px");
+$("div:nth-child(2)").width("200px");
+$("div:nth-child(3)").width("300px");
+$("div:nth-child(4)").width("150px").height("150px");
+$("#m1 > div").addClass("box").width("100%");
+
+
+
+    });
+    </script>
+    <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    div:nth-child(1){
+      background:red;
+    }
+    div:nth-child(2){
+      background:green;
+    }
+    div:nth-child(3){
+      background:blue;
+    }
+    div:nth-child(4){
+      padding:20px;
+      margin:20px;
+      background:#ff6600;
+    }
+    .box{
+      border-bottom:2px solid #ccc;
+      text-align: center;
+      padding:20px;
+      margin-bottom:100px;
+    }
+    </style>
+  </head>
+  <body>
+    <div>내용1</div>
+    <div>내용2</div>
+    <div>내용3</div>
+    <div>내용4</div>
+    <div id="m1">
+      <div>내용5</div>
+      <div>내용6</div>
+      </div>
+  </body>
+</html>

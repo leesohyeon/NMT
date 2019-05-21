@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery-3-4-1.min.js"></script>
+    <script>
+  $(document).ready(function(){
+  $("#site > a:eq(0)").attr("href","http://m.daum.net").text("다음 모바일");
+  $("#site > a:eq(1)").attr("href","http://m.daum.com").text("네이버 모바일");
+  $("#site > a:eq(2)").attr("href","http://m.nate.com").text("네이트 모바일");
+  });
+
+    </script>
+  </head>
+  <body>
+    <div id="site">
+      <a href="http://www.daum.net" target="_blank">다음</a>
+      <a href="http://www.naver.com" target="_blank">네이버</a>
+      <a href="http://www.nate.com" target="_blank">네이트</a>
+      </div>
+  </body>
+</html>
